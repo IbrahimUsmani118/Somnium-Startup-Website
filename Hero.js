@@ -48,11 +48,11 @@ function Hero() {
                     </div>
                     <div className="relative dashboard-container">
                         <div className="dashboard-preview">
-                            <img 
-                                src="https://app.trickle.so/storage/public/images/usr_0ce047c440000001/8433955c-3c3a-4ce8-b7cf-1ed59c8e27c7.jpeg" 
-                                alt="Dashboard Preview" 
-                                className="rounded-2xl shadow-2xl w-full"
-                            />
+                        <img 
+                            src="https://app.trickle.so/storage/public/images/usr_0ce047c440000001/8433955c-3c3a-4ce8-b7cf-1ed59c8e27c7.jpeg" 
+                            alt="Dashboard Preview showing Somnium IT Solutions Dashboard" 
+                            className="rounded-2xl shadow-2xl w-full"
+                        />
                             <div className="dashboard-glow"></div>
                         </div>
                         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-2xl backdrop-blur-sm -z-10"></div>

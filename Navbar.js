@@ -15,9 +15,9 @@ function Navbar() {
                         <a href="#contact" className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Contact</a>
                     </div>
                     <div className="md:hidden flex items-center">
-                        <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700 dark:text-gray-300">
-                            <i className={`fas ${isOpen ? 'fa-times' : 'fa-bars'}`}></i>
-                        </button>
+                    <button aria-label="Toggle navigation menu" onClick={() => setIsOpen(!isOpen)}>
+                        <i className={`fas ${isOpen ? 'fa-times' : 'fa-bars'}`}></i>
+                    </button>
                     </div>
                 </div>
             </div>

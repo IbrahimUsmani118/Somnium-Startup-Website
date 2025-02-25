@@ -5,15 +5,23 @@ function Contact() {
         message: ''
     });
 
-    const handleSubmit = (e) => {
+    const [loading, setLoading] = React.useState(false);
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
         try {
-            // Handle form submission logic here
+            
             console.log('Form submitted:', formData);
+            // Add API call logic here
         } catch (error) {
-            reportError(error);
+            console.error('Form submission error:', error);
+            alert('An error occurred while submitting the form.');
+        } finally {
+            setLoading(false);
         }
     };
+
 
     const handleChange = (e) => {
         setFormData({
@@ -22,6 +30,7 @@ function Contact() {
         });
     };
 
+    
     return (
         <section data-name="contact" id="contact" className="py-20 bg-gray-50">
             <div className="max-w-3xl mx-auto px-4">

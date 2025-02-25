@@ -5,7 +5,6 @@ function App() {
             <Hero />
             <Services />
             <About />
-            <Testimonials />
             <Faq />
             <Footer />
             <ThemeToggle />

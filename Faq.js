@@ -25,8 +25,8 @@ function Faq() {
     ];
 
     const toggleFaq = (index) => {
-        setOpenIndex(openIndex === index ? null : index);
-    };
+        setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
+    };    
 
     return (
         <section data-name="faq" className="py-20 bg-gray-50 dark:bg-gray-900">

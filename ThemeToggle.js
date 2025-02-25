@@ -1,19 +1,18 @@
-function ThemeToggle() {
-    const [isDark, setIsDark] = React.useState(false);
+React.useEffect(() => {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+        setIsDark(true);
+    }
+}, []);
 
-    const toggleTheme = () => {
-        setIsDark(!isDark);
-        document.documentElement.classList.toggle('dark');
-    };
-
-    return (
-        <button
-            data-name="theme-toggle"
-            onClick={toggleTheme}
-            className="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors z-50"
-            aria-label="Toggle theme"
-        >
-            <i className={`fas ${isDark ? 'fa-sun' : 'fa-moon'} text-xl`}></i>
-        </button>
-    );
-}
+const toggleTheme = () => {
+    setIsDark(!isDark);
+    if (isDark) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+    } else {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+    }
+};
