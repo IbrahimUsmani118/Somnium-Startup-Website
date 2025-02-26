@@ -1,0 +1,21 @@
+{
+  "name": "somnium-startup-website",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/IbrahimUsmani118/Somnium-Startup-Website#readme",
+  "bugs": {
+    "url": "https://github.com/IbrahimUsmani118/Somnium-Startup-Website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IbrahimUsmani118/Somnium-Startup-Website.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "About.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start"
+  }
+}
